@@ -1,0 +1,55 @@
+<html>
+<title>Northeastern Goods</title>
+
+<!-- header -->
+<head>
+<div align="center">
+<h1>Northeastern Goods                   <img src="NEU-logo.png" alt="NEU-logo" height="90" width="90"></h1><font color="red">For Northeastern Students, By Northeastern Students</font>
+</div>
+</head>
+
+<!-- tabs -->
+<body style = "background-color:#ADD8E6">
+</br>
+<table border="1" width="100%" ID="Tabs">
+<tr>
+<th><a href="Central Web Page.html"><h3>Home</h3></a></th>
+<th><a href="Employees.html"><h3>Employees</h3></a></th>
+<th><a href="Customers.html"><h3>Customers</h3></a></th>
+<th><a href="Products.html"><h3>Products</h3></a></th>
+<th><a href="Managers.html"><h3>Managers</h3></a></th>
+</tr>
+</table>
+
+<!-- Welcome Message -->
+<h2>You are at the Product Page</h2>
+<p style="margin-left: 0px">You can do a few things. </p>
+<ul>
+<li> Add products to the database </li>
+<li> Gather a report of the products </li>
+<li> Find the most expensive product </li>
+<li> Find the cheapest product </li>
+</ul>
+<!-- Forms -->
+
+<!-- Add Product -->
+<h3>Add Product</h3>
+<form method = "post" action = "Add Products.psp">
+Product Name <input type= "text" name="PROD_NAME"/><br/>
+Product Price <input type = "text" name="PROD_PRICE"/><br/>
+<input type= "submit" name= "add" value= "Add Product"/>
+</form>
+
+<!-- Product Report + Cheapest/Most expensive product -->
+<h3>Get Product Report</h3>
+<form method="post" action="Product Report.psp">
+<input type='submit' name='report' value='Get Product Report'/>
+</form>
+
+<form method = "post" action = "Product Prices.psp">
+<h3>When you click this button you will find the cheapest and the most expensive product</h3>
+<input type = "submit" name="add" value="Cheapest and Most Expensive Product">
+</form>
+
+</body>
+</html>

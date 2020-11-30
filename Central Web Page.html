@@ -1,0 +1,93 @@
+<html>
+<title>Northeastern Goods</title>
+
+<!-- header -->
+<head>
+<div align="center">
+<h1>Northeastern Goods                   <img src="NEU-logo.png" alt="NEU-logo" height="90" width="90"></h1><font color="red">For Northeastern Students, By Northeastern Students</font>
+</div>
+</head>
+
+<!-- clear function for feedback -->
+<script>
+function clearContents(element){
+	element.value="";
+}
+</script>
+
+<!-- tabs -->
+<body style = "background-color:#ADD8E6">
+</br>
+<table border="1" width="100%" ID="Tabs">
+<tr>
+<th><a href="Central Web Page.html"><h3>Home</h3></a></th>
+<th><a href="Employees.html"><h3>Employees</h3></a></th>
+<th><a href="Customers.html"><h3>Customers</h3></a></th>
+<th><a href="Products.html"><h3>Products</h3></a></th>
+<th><a href="Managers.html"><h3>Managers</h3></a></th>
+</tr>
+</table>
+
+<!-- Welcome Message -->
+<h2>Welcome to Northeastern Goods!</h2>
+Access to this database is granted to employees only. Feel free to add data, extract data, and gather reports as you see fit.
+</br>Please give us feedback on this website. We want your thoughts so we can improve this site so everything becomes easier for you.
+<h2>About Northeastern Goods</h2>
+<p style="margin-left: 0px">A group of four curious industrial engineering students from IISE sent out a survey asking about school supplies, snacks, and the cost of them on campus to the entire student body.
+These students were always busy doing work and needed good snacks and stationery to keep producing quality work for their classes, but it was always so expensive to get quality snacks and stationery.
+They wanted to see if their fellow Northeastern students (both undergraduate and graduate) agreed with their opinions. After getting the results from the survey back, the four IISE members came to a consensus.
+Goods were too expensive on campus, and there needed to be a better and cheaper alternative. If no one would do it, then they would.</p>
+<p style="margin-left: 0px">The four students got some funding from the Northeastern Entrepreneurs Club and decided to open a shop called Northeastern Goods with the slogan, “For Northeastern Students, By Northeastern Students.”
+The shop would sell stationery, snacks, and refreshments for an affordable price. Argo Tea had decided to move into the Curry Student Center from Snell Library, and the students thought that there was no better place to have a 
+Northeastern Goods store than inside Snell, the main study hub on campus. </p>
+<p style="margin-left: 0px">With the approval of 85% of the student body, the students were confident of hitting their sales goals, and they opened their shop right on January 2, 2018. Their confidence was well-founded, and the
+business surpassed their goals with regards to sales and profits. </p>
+<p style="margin-left: 0px">However, the students needed to be able to track the sales and growth of the business. This is where their industrial engineering instincts led them to the idea of a database. After taking the 
+Engineering Database Systems Course (IE 3425) taught by the legendary Professor Abe Zeid, the students decided to put their knowledge to the test and create a real-life database that would track the business and its employees,
+customers, products, and orders. That way, the owners (4 students) and managers could add customers, employees, products, and orders when necessary. This would be important especially if the business grew and Northeastern Goods
+decided to expand and open another store. The students would be able to track sales and growth all in one database, which would help with decision-making with regards to pricing, product locations, and many other components. </p>
+
+<!-- Feedback form --> 
+<form method = "post" action = "Feedback.psp">
+
+<h2>Feedback</h2>
+
+<h3>Name</h3>
+First Name: <input type = 'text' name='fName'/></br>
+Middle Name: <input type = 'text' name='mName'/></br>
+Last Name: <input type = 'text' name='lName'/><br/>
+
+<h3>Select your grade/year at Northeastern</h3>
+<input type = "radio" name="year" value = "Freshman"/>Freshman
+<input type = "radio" name="year" value = "Sophomore"/>Sophomore
+<input type = "radio" name="year" value = "Middler"/>Middler
+<input type = "radio" name="year" value = "Junior"/>Junior
+<input type = "radio" name="year" value = "Senior"/>Senior</br>
+
+<h3>Select the tabs you visited</h3>
+<input type = "checkbox" name="tab" value = "Employee"/>Employee
+<input type = "checkbox" name="tab" value = "Customer"/>Customer
+<input type = "checkbox" name="tab" value = "Product"/>Product
+<input type = "checkbox" name="tab" value = "Manager"/>Manager
+
+<h3>Who is your favorite professor</h3>
+<select name = "AbeZeid" multiple>
+<option value = "Abe Zeid">Abe Zeid</option>
+<option value = "aBe zEiD">aBe zEiD</option>
+<option value = "ABE ZEID">ABE ZEID</option>
+<option value = "Definitely Abe Zeid">Definitely Abe Zeid</option>
+<option value = "Are you kidding me Abe Zeid is THE ONLY CHOICE">Are you kidding me Abe Zeid is THE ONLY CHOICE</option>
+<option value = "Professor Abe Zeid is the greatest professor of all time">Professor Abe Zeid is the greatest professor of all time</option>
+</select>
+
+<h3>Comments</h3>
+<textarea name = "feedback" rows="4" cols="50" onFocus = "clearContents (this)">
+We value your feedback.
+Please tell us how we can better serve you.
+</textarea>
+</br>
+<input type = 'submit' name = 'Send it' value = 'Submit'/>
+<input type = 'reset' name = 'clear it' value = 'Clear'/>
+</form>
+</body>
+</html>

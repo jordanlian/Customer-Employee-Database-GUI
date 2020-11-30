@@ -1,0 +1,52 @@
+<html>
+<title>Northeastern Goods</title>
+
+<!-- header -->
+<head>
+<div align="center">
+<h1>Northeastern Goods                   <img src="NEU-logo.png" alt="NEU-logo" height="90" width="90"></h1><font color="red">For Northeastern Students, By Northeastern Students</font>
+</div>
+</head>
+
+<!-- tabs -->
+<body style = "background-color:#ADD8E6">
+</br>
+<table border="1" width="100%" ID="Tabs">
+<tr>
+<th><a href="Central Web Page.html"><h3>Home</h3></a></th>
+<th><a href="Employees.html"><h3>Employees</h3></a></th>
+<th><a href="Customers.html"><h3>Customers</h3></a></th>
+<th><a href="Products.html"><h3>Products</h3></a></th>
+<th><a href="Managers.html"><h3>Managers</h3></a></th>
+</tr>
+</table>
+
+<!-- Welcome Message -->
+<h2>You are at the Employee Page</h2>
+
+<p style="margin-left: 0px">You can do a few things. </p>
+<ul>
+<li> Add employees to the database </li>
+<li> Find the total number of employees </li>
+</ul>
+<!-- Forms -->
+
+<!-- Add Employee -->
+<h3>Add Employee</h3>
+<form method = "post" action = "Add Employees.psp">
+Employee First Name <input type= "text" name="EMP_FNAME"/><br/>
+Employee Last Name <input type = "text" name="EMP_LNAME"/><br/>
+Employee Date of Birth (YYYYMMDD) <input type = "text" name="EMP_DOB"/><br/>
+Employee Date of Hire (YYYYMMDD) <input type = "text" name="EMP_HIRE"/><br>
+Employee Gender (M or F) <input type = "text" name="EMP_GENDER"/><br/>
+<input type= "submit" name= "add" value= "Add Employee"/>
+</form>
+
+<!-- Employee Report + Total Employees -->
+<form method = "post" action = "Total Employees.psp">
+<h3>When you click this button you will find how many total employees there are </h3>
+<input type = "submit" name="add" value="Total Employees">
+</form>
+</form>
+</body>
+</html>

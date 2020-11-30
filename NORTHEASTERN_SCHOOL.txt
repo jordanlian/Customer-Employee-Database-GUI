@@ -1,0 +1,9 @@
+BCHS, Bouvé College of Health Sciences
+CAMD, College of Arts, Media Design
+CCIS, College of Computer and Information Science
+COE, College of Engineering
+COS, College of Science
+CPS, College of Professional Studies
+CSSH, College of Social Sciences and Humanities
+DMB, D'Amore-McKim School of Business
+SL, School of Law
